@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample Page</title>
+	<style>
+		html{
+			background-color: #ABBCD1
+		}
+		body{
+			
+			font-family: Verdana;
+		}
+		/* CSS styles the page */
+		nav#mainNav {
+			background-color: #425E80;
+
+			color: white;
+		}
+		nav#mainNav>ul>li{
+			list-style: none;
+		}
+		nav#mainNav>ul{
+			font-size:2em;
+			margin-left: 15%;
+		}
+		nav#mainNav li{
+			margin-left: 2%;
+			padding: 2vh 0; 
+			list-style: none;
+			display: inline-block; /* inline block, can set width and heigth, etc. */
+			 /*display: block; defaults display, block, elements one after another*/
+			 /*display: inline; inline display, like "proper" menu */
+		}
+		
+	</style>
+	<script>
+		/* Javascript makes things happen */
+	</script>
+</head>
+<body >
+	<h1>Title</h1>
+	<h1 id="idname"></h1> <!-- type h1#name, press tab = -->
+	<h1 class="class"></h1> <!-- type h1.name, press tab = -->
+	<nav id = "mainNav">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+	<div>
+		<p><strong>DIV is a division on a page</strong></p>
+	</div>
+	<header>Sections are : header</header>
+	<section>Section</section>
+	<aside>Aside</aside>
+	<footer>Footer</footer>
+	<footer>another footer?</footer>
+
+	<style>
+		div.box /*or .box*/{
+			background-color: #AA7AFF;
+			padding: 10%;
+			width: 15vh;
+			height: 15vh;
+			display: inline-block;
+			margin: 2vh;
+
+		}
+		div.boxContainer{
+			margin: 10vh 0	;
+			border: 1px solid #0D0A12;
+		}
+	</style>
+	<div class="boxContainer">
+		<div class="box">Here is a box</div>
+		<div class="box">Here is a box</div>
+		<div class="box">Here is a box</div>
+		<div class="box">Here is a box</div>
+		<div class="box">Here is a box</div>
+		<div class="box">Here is a box</div>
+	</div>
+
+</body>
+</html>
