@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 3vw;
+            /* Setting the content to the full size of the page */
+            margin:0;padding:0;
+         }
+        nav{
+            padding:0.5vmin 0 0 1vmin;
+            display: flex;
+            margin: auto;
+            /* margin-left: 5vw;
+            margin-right: 5vw; */
+            background-color:wheat;
+            justify-content: center;
+        }
+        div.navitem{
+            margin: 2vw;
+            height: 10vh;
+            min-width: 10vw;
+            background-color: rgb(240, 215, 169);
+            text-align: center;
+            text-decoration: none;
+        }
+        div.navitem a.nav{
+            text-decoration: none;
+            color: rgb(107, 104, 104);
+        }
+        div.navitem:hover{
+            font-size: 1.03em;
+            background-color: rgb(236, 214, 173);
+            font-weight: bold;
+        }
+        div.navitem a:active{
+            background-color: rgb(212, 192, 154);
+        }
+        .containerbikeimages{
+            display: flex;
+            width: 80%;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+        .bikeimages{
+            min-width: 10vw;
+            height: 25vmin;
+            margin: 3vmin;
+            background-color: rgb(149, 149, 199);
+
+        }
+    </style>
+</head>
+<body onload="getImages()">
+    <nav>
+        <div class="navitem"</div><a class="nav" href="#">Home</a></div>
+        <div class="navitem"</div><a class="nav" href="#">About</a></div>
+        <div class="navitem"</div><a class="nav" href="#">Blog</a></div>
+        <div class="navitem"</div><a class="nav" href="#">Contact</a></div>
+    </nav>
+    <div class="main"><h2>Bike images</h2></div> 
+    <section class="containerbikeimages">
+        <div class="bikeimages"><img src="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjLsPek6PDkAhUPx4UKHQt-CZQQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.evil-bikes.com%2Fproducts%2Fdemo-bikes&psig=AOvVaw1iL4XzK5zUmIKqhLbTOoch&ust=1569667229270147" /></div>
+        <div class="bikeimages">
+            <img src="https://cdn.shopify.com/s/files/1/0903/4494/products/Smashing-Pumpkin-GX-Eagle-complete-front-white.jpg?v=1563401075" />Here</div>
+        <div class="bikeimages">
+            <img src="https://cdn.shopify.com/s/files/1/2081/1519/products/1600x1067_US_B_Blue_PROFILE.jpg?v=1567701352" />Here</div>
+        <div class="bikeimages"><img src="C:\Users\Aleksander Vidzup\Pictures\rab02.jpg" />Here</div>
+        <div class="bikeimages"><img src="C:\Users\Aleksander Vidzup\Pictures\rab02.jpg" />Here</div>
+        <div class="bikeimages"><img src="C:\Users\Aleksander Vidzup\Pictures\rab02.jpg" />Here</div>
+        <div class="bikeimages"><img src="C:\Users\Aleksander Vidzup\Pictures\rab02.jpg" />Here</div>
+        <div class="bikeimages"><img src="C:\Users\Aleksander Vidzup\Pictures\rab02.jpg" />Here</div>
+        <div class="bikeimages"><img src="C:\Users\Aleksander Vidzup\Pictures\rab02.jpg" />Here</div>
+        <div class="bikeimages"><img src="C:\Users\Aleksander Vidzup\Pictures\rab02.jpg" />Here</div>
+        <div class="bikeimages"><img src="C:\Users\Aleksander Vidzup\Pictures\rab02.jpg" />Here</div>
+        <div class="bikeimages"><img src="C:\Users\Aleksander Vidzup\Pictures\rab02.jpg" />Here</div>
+        <div class="bikeimages"><img src="C:\Users\Aleksander Vidzup\Pictures\rab02.jpg" />Here</div>
+    </section>
+    <section class="containerbikeimages2" id="containerbikeimages2"></section>
+
+    <script>
+      
+        
+        function getImages()
+        {
+            // var counter = 121;
+            // for (let i = 0; i < 10; i++) {
+                //const element = array[i];
+                // add images to second div
+                for (var counter = 120; counter < 160; counter++)
+                {
+                    var image = document.createElement("img");
+                    image.width = "120";
+                    image.src="https://picsum.photos/"+ counter;
+                    image.id="img"+counter;
+                    document.getElementById('containerbikeimages2').appendChild(image);
+                }
+            
+        }
+    
+    </script>
+</body>
+</html>

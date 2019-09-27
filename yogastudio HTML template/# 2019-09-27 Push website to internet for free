@@ -1,0 +1,14 @@
+# Push website to internet for free
+	(does not work on ASP.NET websites)
+connect via github with automatic deployement on change (IE gitpush)
+
+	Build local
+		push to github
+			deploy to netlify
+		change local
+			push github
+				Automatic redeployment
+
+
+
+1) create an account with netlify.com

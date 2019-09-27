@@ -10,3 +10,7 @@ http.createServer(function(request,response){
 	response.end('Server responding = ' + counter + ' requests')
 
 }).listen(8080,'127.0.0.1')
+
+function pushToScreen (){
+	response.writeHead(200,{})
+}
