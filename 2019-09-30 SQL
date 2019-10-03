@@ -1,0 +1,26 @@
+# SQL
+
+Sql theory terms
+
+4 categories
+
+DML Data Manipulation Language
+	Basic queries : SELECT, INSERT, UPDATE, DELETE (CRUD operations)
+
+
+DDL Data Definitoon Language
+	Create Data Structures ie Database / Table
+		CREATE / DROP - database & table ie add new or remove completely
+		ALTER 			table ie to add key / column
+		TRUNCATE 		remove from the database
+
+DCL Data Control Language
+	Permissions 		GRANT / REVOKE
+
+
+TCL Transaction Control Language
+	Group of transactions TOGETHER 
+		1) COMMIT(all of the transactions in the group as a whole) eg ATM withdrawl
+					is either ALL COMMIT or nothing
+		2) ROLLBACK to a given point eg start of the transaction group
+		3) SAVEPOINT : mid-way point of saving data progression throughout a series of transactions
